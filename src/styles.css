@@ -19,6 +19,9 @@ h1 {
 h2 {
   font-size: 64px;
 }
+h3 {
+  font-size: 48px;
+}
 p {
   font-family: var(--default-font-family);
   font-weight: normal;
@@ -28,7 +31,7 @@ p {
 .hero {
   background: var(--secondry-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 .hero p {
   font-family: "Playfair Display", serif;
@@ -63,7 +66,7 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 .content {
   margin: 30px;
@@ -84,6 +87,67 @@ p {
 .content p {
   font-size: 14px;
 }
+.logo {
+  max-height: 40px;
+}
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+footer {
+  margin: 60px 0;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  text-align: center;
+}
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+footer .social-links a {
+  margin: 0 20px;
+  color: var(--branding-color);
+  background: var(--secondry-color);
+  padding: 10px 14px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+footer .contact-box {
+  background: var(--secondry-color);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .contact-box p {
+  margin: 0;
+}
+.pic {
+  width: 500px;
+}
 @media (max-width: 900px) {
   .project-description {
     padding: 0;
@@ -96,11 +160,15 @@ p {
   h2 {
     font-size: 44px;
   }
-  .hero {
-    padding: 80px 20px;
+  h3 {
+    font-size: 20px;
   }
+
   .content {
     padding: 0;
     text-align: center;
+  }
+  nav a {
+    font-size: 14px;
   }
 }
